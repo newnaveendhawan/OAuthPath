@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OAuthPath: OAuth app setup guides for agent builders</title><link rel="stylesheet" href="style.css"></head><body>
+<header><h1>OAuthPath</h1><p>Look up an app. See how hard its OAuth setup is, how long it takes, what can block you, and what an agent can do for you.</p>
+<form id="f"><input id="q" placeholder="App name or website, e.g. Slack, notion.so, Zoom" autocomplete="off"><button>Look up</button></form>
+<div id="chips"></div></header>
+<main id="main"></main>
+<section id="settings"><details><summary>Live generation settings (for apps not in the library)</summary>
+<p class="muted">Live generation calls the Gemini API from your browser (it picks the provider's official doc pages, Gemini fetches them, and only claims backed by a fetched page stay marked verified). Your key stays in this browser (localStorage) and is sent only to Google. Get a key at Google AI Studio.</p>
+<label>Gemini API key <input id="key" type="password" placeholder="paste key"></label>
+<label>Model <input id="model" value="gemini-3.1-flash-lite"></label>
+<button id="save" type="button">Save</button></details></section>
+<footer>Guides are researched from provider docs and labelled by evidence level. Always check the linked source before you commit time or money.</footer>
+<script src="app.js"></script></body></html>
